@@ -1,81 +1,84 @@
-"use client"
+"use client";
 import React from "react";
-import { Image, Link } from "@nextui-org/react";
-import { useState } from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/react";
-import { FcBullish } from "react-icons/fc";
-import { FcAssistant } from "react-icons/fc";
-import { FcBusinessman } from "react-icons/fc";
-import { FcLock } from "react-icons/fc";
-import { FcDatabase } from "react-icons/fc";
-import { FcSettings } from "react-icons/fc";
+import { Image } from "@nextui-org/react";
+import { FaGear } from "react-icons/fa6";
+import { FaCloud } from "react-icons/fa";
+import { MdOutlineSecurity, MdBusinessCenter  } from "react-icons/md";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { GrUserExpert } from "react-icons/gr";
+
 export default function Homepage() {
-
-  const [isHovered1, setIsHovered1] = useState(false)
-
+  const cardStyle = "bg-red-200 h-30 text-black text-center";
   return (
-    <div className="flex flex-row">
-      <div className="w-8/12">
-        <Image src="/images/imagem-login.png" alt="management hotel" className="h-dvh"></Image>
+    <main className="overflow-x-hidden">
+      <div className="w-screen">
+        <Image src="/images/homepage-img.png" alt="Homepage Image" className="w-screen" />
+        <h1 className="text-center -mt-72"><b>Os nossos serviços.</b></h1>
       </div>
-      <div></div>
-      <div className="grid grid-cols-3 gap-6 pl-8 pb-4 pt-40 pr-8 h-3/4 w-6/12">
-        <Card className="py-4" radius="none">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col ">
-          <FcSettings size={120}/>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-            <p className="text-center pb-1"><b>Software</b></p>
-            <p className="text-center">Software Solutions for SMEs, Hotels, Restaurants and Food & Grocery Retail. </p>
-          </CardBody>
-        </Card>
-        <Card className="py-4" radius="none">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col">
-          <FcDatabase size={120}/>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-          <p className="text-center pb-1"><b>Cloud</b></p>
-            <p className="text-center">Environment for cloud management services and secure data.</p>
-          </CardBody>
-        </Card>
-        <Card className="py-4" radius="none">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col ">
-          <FcLock size={120}/>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-          <p className="text-center pb-1"><b>Cybersecurity</b></p>
-            <p className="text-center">Cybersecurity services and protocols to protect your data.</p>
-          </CardBody>
-        </Card>
-        <Card className="py-4" radius="none">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col">
-          <FcBusinessman size={120}/>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-          <p className="text-center pb-1"><b>Business Inteligence</b></p>
-            <p className="text-center">Analysis tools for strategic decisions.</p>
-          </CardBody>
-        </Card>
-        <Card className="py-4" radius="none">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col ">
-          <FcAssistant size={120}/>
-          </CardHeader>
-          <CardBody className="overflow-visible py-2">
-          <p className="text-center pb-1"><b>24/7 assistance service</b></p>
-            <p className="text-center">24/7 Italian assistance service with a dedicated customer portal.</p>
 
-          </CardBody>
-        </Card>
-        <Card className="py-4" radius="none">
-          <CardHeader className="pb-0 pt-2 px-4 flex-col ">
-          <FcBullish size={120} />
-          </CardHeader>
-          <CardBody className="overflow-visible py-2 pb-1">
-          <p className="text-center"><b>IT specialists for 50 years</b></p>
-            <p className="text-center">Effective consulting services with highly qualified professionals.</p>
-          </CardBody>
-        </Card>
+      <div className="mt-72 flex justify-center">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+          <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
+            <FaGear size={35} color="#192a51" />
+          </div>
+          <div className="px-5">
+            <p><b>Software</b></p>
+            <p className="mt-2 mb-5">Software Solutions for SMEs, Hotels, Restaurants and Food & Grocery Retail.</p>
+          </div>
+        </div>
+
+        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+          <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
+            <FaCloud size={35} color="#192a51" />
+          </div>
+          <div className="px-5">
+            <p><b>Cloud</b></p>
+            <p className="mt-2 mb-5">Environment for cloud management services and secure data.</p>
+          </div>
+        </div>
+
+        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+          <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
+            <MdOutlineSecurity size={35} color="#192a51" />
+          </div>
+          <div className="px-5">
+            <p><b>Cybersecurity</b></p>
+            <p className="mt-2 mb-5">Cybersecurity services and protocols to protect your data.</p>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div className="mt-5 flex justify-center">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+          <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
+            <MdBusinessCenter size={35} color="#192a51" />
+          </div>
+          <div className="px-5">
+            <p><b>Business Inteligence</b></p>
+            <p className="mt-2 mb-5">Analysis tools for strategic decisions.</p>
+          </div>
+        </div>
+
+        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+          <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
+            <RiCustomerService2Line size={35} color="#192a51" />
+          </div>
+          <div className="px-5">
+            <p><b>24/7 assistance service</b></p>
+            <p className="mt-2 mb-5">24/7 Italian assistance service with a dedicated customer portal.</p>
+          </div>
+        </div>
+
+        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+          <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
+            <GrUserExpert size={35} color="#192a51" />
+          </div>
+          <div className="px-5">
+            <p><b>IT specialists for 50 years</b></p>
+            <p className="mt-2 mb-5">Effective consulting services with highly qualified professionals.</p>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
