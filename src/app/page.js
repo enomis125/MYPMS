@@ -8,16 +8,17 @@ import { RiCustomerService2Line } from "react-icons/ri";
 import { GrUserExpert } from "react-icons/gr";
 
 export default function Homepage() {
-  const cardStyle = "bg-red-200 h-30 text-black text-center";
   return (
     <main className="overflow-x-hidden">
-      <div className="w-screen">
-        <Image src="/images/homepage-img.png" alt="Homepage Image" className="w-screen" />
-        <h1 className="text-center -mt-72"><b>Os nossos serviços.</b></h1>
+      <div className="h-screen">
+        <h1 className="text-left text-5xl px-20 py-64 leading-relaxed">
+          Elevamos o seu negócio com soluções digitais<br></br>
+          prontas para transformar operações e oferecer<br></br>
+          suporte excepcional.</h1>
       </div>
 
-      <div className="mt-72 flex justify-center">
-        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+      <div className=" max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded-lg shadow-lg">
           <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
             <FaGear size={35} color="#192a51" />
           </div>
@@ -27,7 +28,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded-lg shadow-lg">
           <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
             <FaCloud size={35} color="#192a51" />
           </div>
@@ -37,7 +38,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded-lg shadow-lg">
           <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
             <MdOutlineSecurity size={35} color="#192a51" />
           </div>
@@ -46,10 +47,8 @@ export default function Homepage() {
             <p className="mt-2 mb-5">Cybersecurity services and protocols to protect your data.</p>
           </div>
         </div>
-      </div>
 
-      <div className="mt-5 flex justify-center">
-        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded-lg shadow-lg">
           <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
             <MdBusinessCenter size={35} color="#192a51" />
           </div>
@@ -59,7 +58,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded-lg shadow-lg">
           <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
             <RiCustomerService2Line size={35} color="#192a51" />
           </div>
@@ -69,7 +68,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="text-black bg-white border b-2px-gray w-72 rounded rounded-lg m-5">
+        <div className="text-black bg-white border b-2px-gray w-72 rounded-lg shadow-lg">
           <div className="bg-blue-200 w-20 h-20 rounded-full flex justify-center items-center m-5">
             <GrUserExpert size={35} color="#192a51" />
           </div>
